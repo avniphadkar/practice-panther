@@ -621,7 +621,7 @@ class MattersApi
      */
     public function mattersGetMatters($assigned_to_user_id = null, $account_id = null, $status = null, $created_since = null, $updated_since = null, $search_text = null, $account_tag = null, $matter_tag = null)
     {
-        list($response) = $this->mattersGetMattersWithHttpInfo($assigned_to_user_id, $account_id, $status, $created_since, $updated_since, $search_text, $account_tag, $matter_tag);
+        $response = $this->mattersGetMattersWithHttpInfo($assigned_to_user_id, $account_id, $status, $created_since, $updated_since, $search_text, $account_tag, $matter_tag);
         return $response;
     }
 
