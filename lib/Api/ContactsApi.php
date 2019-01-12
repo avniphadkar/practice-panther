@@ -417,13 +417,13 @@ class ContactsApi
                     $content = json_decode($content);
                 }
             }
-            return $content;
 
-            return [
+            /*return [
                 ObjectSerializer::deserialize($content, $returnType, []),
                 $response->getStatusCode(),
                 $response->getHeaders()
-            ];
+            ];*/
+            return $content;
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
