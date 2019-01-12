@@ -417,6 +417,7 @@ class ContactsApi
                     $content = json_decode($content);
                 }
             }
+            return $content;
 
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
